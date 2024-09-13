@@ -61,39 +61,6 @@ a:hover {
     padding: 20px;
 }
 
-/* ----------------------- Redes Sociales ----------------------- */
-
-.redesSociales {
-    text-align: center;
-    /* Alinea todo el contenido al centro */
-    padding-top: 30px;
-}
-
-.redesSociales .iconos {
-    display: inline-block;
-    text-align: center;
-    margin: 10px auto;
-    padding: 40px;
-}
-
-.redesSociales .iconos img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.redesSociales .iconos a {
-    color: black;
-    text-decoration: underline;
-    padding: 10px;
-    display: block;
-    /* Asegura que el enlace ocupe todo el ancho del contenedor */
-}
-
-.redesSociales h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
 /* ----------------------- FORMULARIO ----------------------- */
 .formulario {
     background-color: #FFFAF0;
