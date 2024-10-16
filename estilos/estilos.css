@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+}
+/* ---------------------------------------------------------------- */
+/* ----------------------- BARRA NAVEGACIÓN ----------------------- */
+/* ---------------------------------------------------------------- */
+.iconoMenu {
+    height: 60px;
+    position: absolute;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2F3E46;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    color: #90fca2;
+    text-decoration: underline;
+}
+/* --------------------------------------------------------- */
+/* -------------------PÁGINA PRINCIPAL---------------------- */
+/* --------------------------------------------------------- */
+.fondo {
+    background-image: url(../img/fondoInicio.jpg);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 170px;
+}
+
+.fondo h1 {
+    bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+}
+
+.fondo h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.fondo .irProductos {
+    background-color: #85A98D;
+    padding: 20px;
+}
+
+.fondo .irProductos:hover {
+    color: #90fca2;
+    text-decoration: none;
+    background-color: #2F3E46;
+}
+
+/* --------------------------------------------------------- */
+/* -------------ESTILOS SVG | BANDERAS ---------------------- */
+/* --------------------------------------------------------- */
+
+.banderas {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px; 
+}
+
+.banderasTextos {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.banderasTextos p {
+    font-size: 14px; 
+    margin-top: 5px; 
+}
+
+svg {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .banderas {
+        flex-direction: column; /* Mantiene el diseño en columna en pantallas pequeñas */
+    }
+}
+

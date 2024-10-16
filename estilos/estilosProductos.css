@@ -1,0 +1,182 @@
+/* --------------------------------------------------------- */
+/* ----------------------- PRODUCTOS ----------------------- */
+/* --------------------------------------------------------- */
+/*  TRANSICIONES, ANIMACIONES Y KEYFRAMES */
+
+.tablaProductos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FFFAF0;
+    padding: 20px;
+    border-radius: 10px; 
+    animation-name: animarTablaProductos; 
+    animation-duration: 1s ;
+}
+
+@keyframes animarTablaProductos {
+    from {opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tablaProductos h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tablaProductos h1:hover {
+    transform: scale(1.5);
+}
+
+.tablaProductos table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+} 
+.tablaProductos .titulos tr th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #84A98C;
+    color: white;
+    font-size: 16px;
+}
+
+.tablaProductos .productos {
+    background-color: #f9f9f9;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+.tablaProductos .productos td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #555; 
+}
+
+.tablaProductos .productos:hover {
+    background-color: #6ec481;
+    color: white; 
+    transform: scale(1.05);
+}
+
+.tablaProductos table, 
+.tablaProductos th, 
+.tablaProductos td {
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+}
+
+/* --------------------------------------------------------- */
+/*-----------------------PIE DE PÁGINA-----------------------*/
+/* --------------------------------------------------------- */
+@keyframes animacionPiePagina {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #2F3E46;
+}
+
+.pie-pagina .grupo {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: animacionPiePagina;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.pie-pagina .grupo .contendor {
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor:hover {
+    transform: scale(1.05);
+    background-color: #354F52;
+}
+
+.pie-pagina .grupo .contendor figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo .contendor img {
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor img:hover {
+    transform: scale(1.4);
+}
+
+.pie-pagina .grupo .contendor h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor h2:hover {
+    color: #90fca2; 
+}
+
+.pie-pagina .grupo .contendor p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor p:hover {
+    color: #90fca2; 
+}
+
+.pie-pagina .grupo .contendor .libro img {
+    width: 40%;
+    transition: transform 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor .libro img:hover {
+    transform: scale(1.5);
+}
+
+.pie-pagina .grupo .contendor .pagos img {
+    width: 20%;
+    height: 10%;
+    transition: transform 0.3s ease;
+}
+
+.pie-pagina .grupo .contendor .pagos img:hover {
+    transform: scale(1.3);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #354F52;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
