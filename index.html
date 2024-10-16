@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Avance de proyecto final 1</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Avance de proyecto final 2</title>
+    <link rel="shortcut icon" href="img/iconoWeb.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="contactos.html">CONTACTOS</a></li>
+                <li><a href="testimonios.html">TESTIMONIOS</a></li>
             </ul>
         </nav>
     </header>
@@ -23,39 +25,32 @@
         <br>
         <h3>¡Las mejores delicias lo econtrarás solo aquí! <br> ¡Descubre las opciones que tenemos para tí!</h3>
         <br>
-        <a href="productos.html">¡NUESTROS PRODUCTOS!</a>
+        <a class="irProductos" href="productos.html">¡NUESTROS PRODUCTOS!</a>
     </div>
 
-    <footer class="pie-pagina">
-        <div class="grupo">
-            <div class="contendor">
-                <figure>
-                    <a href="#">
-                        <img src="img/logoWeb.png" alt="">
-                    </a>
-                </figure>
-            </div>
-            <div class="contendor">
-                <h2>HORARIO DE ATENCIÓN</h2>
-                <p>Lunes a Sábado: 7:00 AM - 10:30 PM</p>
-                <p>Domingos y Feriados: 8:00 AM - 9:45 PM</p>
-                <div class="pagos">
-                    <img src="img/visa.png" alt="">
-                    <img src="img/MASTERCARD.png" alt="">
-                    <img src="img/yape.png" alt="">
-                </div>
-            </div>
-            <div class="contendor">
-                <h2>LIBRO DE RECLAMACIONES</h2>
-                <div class="libro">
-                    <img src="img/libro_reclamaciones.png" alt="">
-                </div>
-                <br>
-                <a href="contactos.html"><h4>Contactos</h4></a>
-            </div>
-        </div>
-    </footer>
+    <!--=======================
+      SVG DE BANDERAS DE PAISES
+     =======================-->
+    <div class="banderas">
+        <h1 class="banderasTextos">¡Ahora contamos con presencia Internacional! <p>¡Tenemos locales en Italia, Perú y Colombia!</p></h1>
 
-
+        <svg width="250" height="100" viewBox="0 0 3 2">
+            <rect width="1" height="2" x="0" fill="#008d46" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#d2232c" />
+        </svg>
+    
+        <svg width="250" height="100" viewBox="0 0 3 2">
+            <rect width="1" height="2" x="0" fill="#ff1414" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#ff1414" />
+        </svg>
+    
+        <svg width="250" height="100" viewBox="0 0 3 2">
+            <rect width="2.85" height="1" y="0" fill="#ffda00" />
+            <rect width="2.85" height="0.6" y="1" fill="#0020cc" />
+            <rect width="2.85" height="0.6" y="1.5" fill="#cc1300" />
+        </svg>
+    </div>
 </body>
 </html>

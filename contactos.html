@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilosContactos.css">
+    <link rel="shortcut icon" href="img/iconoWeb.png" type="image/x-icon">
     <title>CONTÁCTANOS</title>
 </head>
 <body>
@@ -14,34 +16,40 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="contactos.html">CONTACTOS</a></li>
+                <li><a href="testimonios.html">TESTIMONIOS</a></li>
             </ul>
         </nav>
     </header>
-    <div class="formulario">
-        <h1 class="contactosFormulario">CONTACTOS</h1>
-        <form action="">
-            <p>NOMBRES COMPLETOS</p>
-            <input type="text" class="ingreso"> 
-            <br/>
+    <!--=======================
+            FORMULARIO
+    =======================-->
+    <h1 class="contactosFormulario">CONTACTOS</h1>
+    <div class="formulario-contenedor">
+        <div class="imagen-lateral">
+            <img src="img/imagenLadoFormulario.jpg" alt="Imagen de contacto">
+        </div>
 
-            <p>CORREO ELECTRÓNICO</p>
-            <input type="text" class="ingreso"> 
-            <br/>
-        
-            <p>NÚMERO CELULAR/TELÉFONO</p>
-            <input type="text" class="ingreso"> 
-            <br/>
-        
-            <p>MENSAJE</p>
-            <textarea class="ingreso"></textarea> 
-            <br/>
-        
-            <p class="botonEnvio">
-                <input type="submit" value="ENVIAR">
-            </p>
-        </form>
+        <div class="formulario">
+            <form action="">
+                <p>NOMBRES COMPLETOS</p>
+                <input type="text" class="ingreso"> 
+                <br/>
+                <p>CORREO ELECTRÓNICO</p>
+                <input type="text" class="ingreso"> 
+                <br/>
+                <p>NÚMERO CELULAR/TELÉFONO</p>
+                <input type="text" class="ingreso"> 
+                <br/>
+                <p>MENSAJE</p>
+                <textarea class="ingreso"></textarea> 
+                <br/>
+                <p class="botonEnvio">
+                    <input type="submit" value="ENVIAR">
+                </p>
+            </form>
+        </div>
     </div>
-
+    
     <div class="datos">
         <div class="datosTexto">
             <h1>ENCUENTRANOS EN</h1>
@@ -57,34 +65,4 @@
         </div>
     </div>
 
-    <footer class="pie-pagina">
-        <div class="grupo">
-            <div class="contendor">
-                <figure>
-                    <a href="#">
-                        <img src="img/logoWeb.png" alt="">
-                    </a>
-                </figure>
-            </div>
-            <div class="contendor">
-                <h2>HORARIO DE ATENCIÓN</h2>
-                <p>Lunes a Sábado: 7:00 AM - 10:30 PM</p>
-                <p>Domingos y Feriados: 8:00 AM - 9:45 PM</p>
-                <div class="pagos">
-                    <img src="img/visa.png" alt="">
-                    <img src="img/MASTERCARD.png" alt="">
-                    <img src="img/yape.png" alt="">
-                </div>
-            </div>
-            <div class="contendor">
-                <h2>LIBRO DE RECLAMACIONES</h2>
-                <div class="libro">
-                    <img src="img/libro_reclamaciones.png" alt="">
-                </div>
-                <br>
-                <a href="contactos.html"><h4>Contactos</h4></a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    
