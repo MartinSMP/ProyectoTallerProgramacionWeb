@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Avance de proyecto final 2</title>
+    <title>Avance de proyecto final 3</title>
     <link rel="shortcut icon" href="img/iconoWeb.png" type="image/x-icon">
 </head>
 <body>
@@ -27,7 +27,25 @@
         <br>
         <a class="irProductos" href="productos.html">¡NUESTROS PRODUCTOS!</a>
     </div>
-
+    <!--=======================
+      CONTENEDOR DE FRASES/CITAS
+     =======================-->
+    <div class="contenedor-citas">
+        <!-- Primer bloque: Título -->
+        <div class="bloque bloque-titulo">
+            <h1 id="titulo-citas">FRASES DEL <p> DÍA</h1>
+        </div>
+        <!-- Segundo bloque: Cita y autor -->
+        <div class="bloque bloque-cita">
+            <p id="cita"></p>
+            <p id="autor"></p>
+        </div>
+        <!-- Tercer bloque: Botón -->
+        <div class="bloque bloque-boton">
+            <button type="button" id="boton-cambiar-cita" class="btn btn-primary">Siguiente Frase</button>
+        </div>
+    </div>
+    
     <!--=======================
       SVG DE BANDERAS DE PAISES
      =======================-->
@@ -52,5 +70,8 @@
             <rect width="2.85" height="0.6" y="1.5" fill="#cc1300" />
         </svg>
     </div>
+    <script src="js/citas.js"></script>
+    <script src="js/app.js"></script>
+    
 </body>
 </html>
