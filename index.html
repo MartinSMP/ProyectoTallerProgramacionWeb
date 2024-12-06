@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Avance de proyecto final 3</title>
+    <link rel="stylesheet" href="estilos/estilosProductos.css">
+    <link rel="stylesheet" href="estilos/estilosContactos.css">
+    <link rel="stylesheet" href="estilos/estilosTestimonios.css">
+    <link rel="stylesheet" href="estilos/estilosProductosStock.css">
+    <title>Proyecto Final | Taller de Programación Web </title>
     <link rel="shortcut icon" href="img/iconoWeb.png" type="image/x-icon">
 </head>
 <body>
+    <!--=======================
+      BARRA DE NAVEGACIÓN
+     =======================-->
     <header>
-        <a href="index.html"><img src="img/logoWeb.png" alt="" class="iconoMenu"></a>
+        <a href="index.html">
+            <img src="img/logoWeb.png" alt="" class="iconoMenu">
+        </a>
         <nav class="barra">
             <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="contactos.html">CONTACTOS</a></li>
-                <li><a href="testimonios.html">TESTIMONIOS</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#seccionProductos">PRODUCTOS</a></li>
+                <li><a href="#formulario">CONTACTOS</a></li>
+                <li><a href="#testimonios">TESTIMONIOS</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="fondo">
+    <div class="fondo" id="inicio">
+        <video autoplay muted loop class="videoFondo">
+            <source src="video/videoFondo.mp4" type="video/mp4">
+        </video>
+        <div class="colorFondoVideo"></div>
         <h1>PASTELERÍA <br> "EL DULCE"</h1>
         <br>
-        <h3>¡Las mejores delicias lo econtrarás solo aquí! <br> ¡Descubre las opciones que tenemos para tí!</h3>
+        <h3>¡Las mejores delicias lo encontrarás solo aquí! <br> ¡Descubre las opciones que tenemos para ti!</h3>
         <br>
-        <a class="irProductos" href="productos.html">¡NUESTROS PRODUCTOS!</a>
+        <a class="irProductos" href="#seccionProductos">¡NUESTROS PRODUCTOS!</a>
     </div>
+    
     <!--=======================
       CONTENEDOR DE FRASES/CITAS
      =======================-->
@@ -70,8 +84,338 @@
             <rect width="2.85" height="0.6" y="1.5" fill="#cc1300" />
         </svg>
     </div>
+    <!--=======================
+        SECCIÓN PRODUCTO
+     =======================-->
+    <div class="productosContenido" id="seccionProductos">
+        <h1 class="title">Nuestros Productos <p>Disponibles ahora</p>
+        </h1>
+        <div class="productos">
+            <!-- 
+                función verDetalles( 
+                    NOMBRE PRODUCTO , 
+                    RUTA IMÁGEN, 
+                    DETALLES DEL PRODUCTO, 
+                    PRECIO) 
+                -->
+
+            <!-- Producto 1 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Keke Marmoleado', 
+                    'img/productos/queque marmoleado.jpg', 
+                    'Un esponjoso bizcocho con un delicioso diseño marmoleado de vainilla y chocolate', 
+                    '10.00'
+                    )">
+                <img src="img/productos/queque marmoleado.jpg" alt="Keke Marmoleado">
+                <h3>Keke Marmoleado</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Torta de Fresas', 
+                    'img/productos/pastel de fresas.jpg', 
+                    'Una delicada torta cubierta con fresas frescas y crema batida', 
+                    '20.00')">
+                <img src="img/productos/pastel de fresas.jpg" alt="Torta de Fresas">
+                <h3>Torta de Fresas</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Torta Helada', 
+                    'img/productos/TORTA HELADA.jpg', 
+                    'Una combinación de gelatina y crema sobre un suave bizcocho frío',
+                     '25.00'
+                     )">
+                <img src="img/productos/TORTA HELADA.jpg" alt="Torta Helada">
+                <h3>Torta Helada</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Chifón', 
+                    'img/productos/chifon.png', 
+                    'Un pastel ligero y aireado con un sabor clásico irresistible', 
+                    '20.00'
+                    )">
+                <img src="img/productos/chifon.png" alt="Chifón">
+                <h3>Chifón</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 5 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Torta de Chocolate con Naranja', 
+                    'img/productos/pastel de chocolate.jpg', 
+                    'Una fusión perfecta de chocolate intenso y un toque cítrico', 
+                    '30.00'
+                    )">
+                <img src="img/productos/pastel de chocolate.jpg" alt="Torta de Chocolate con Naranja">
+                <h3>Torta de Chocolate con Naranja</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 6 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Torta de Chocolate', 
+                    'img/productos/TORTA CHOCOLATE.png', 
+                    'El clásico favorito, hecho con capas de chocolate puro', 
+                    '40.00'
+                    )">
+                <img src="img/productos/TORTA CHOCOLATE.png" alt="Torta de Chocolate">
+                <h3>Torta de Chocolate</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 7 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Pié de Manzana', 
+                    'img/productos/pieManzana.jpg', 
+                    'Relleno de manzana dulce en una base de hojaldre crujiente', 
+                    '30.00'
+                    )">
+                <img src="img/productos/pieManzana.jpg" alt="Pié de Manzana">
+                <h3>Pié de Manzana</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 8 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Pionono con Crema de Fresa', 
+                    'img/productos/PIONONO-DE-FRESA-CON-CREMA.jpg', 
+                    'Un suave rollo de bizcocho relleno con mermelada de fresa casera', 
+                    '20.00'
+                    )">
+                <img src="img/productos/PIONONO-DE-FRESA-CON-CREMA.jpg" alt="Pionono con Crema de Fresa">
+                <h3>Pionono con Crema de Fresa</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Pan Pizza', 
+                    'img/productos/panPizza.jpg', 
+                    'Pan Pizza con jamonada y/o peperoni', 
+                    '5.00 x 3 unidades'
+                    )">
+                <img src="img/productos/panPizza.jpg" alt="Pan Pizza">
+                <h3>Pan Pizza</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 10 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Pudin', 
+                    'img/productos/pudin.jpg', 
+                    'El clásico favorito, hecho con capas de vainilla', 
+                    '15.00'
+                    )">
+                <img src="img/productos/pudin.jpg" alt="Pudin">
+                <h3>Postre <p>Pudin</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 11 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Combo de Kekes Pequeños', 
+                    'img/productos/kekes pequeños.png', 
+                    'Este combo contiene 6 kekes pequeños multisabores', 
+                    '10.00'
+                    )">
+                <img src="img/productos/kekes pequeños.png" alt="Kekes Pequeños">
+                <h3>Combo de Kekes Pequeños</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+    
+            <!-- Producto 12 -->
+            <div class="product"
+                onclick="verDetalles(
+                    'Torta de Limón y Mango', 
+                    'img/productos/postreMangoLimon.jpg', 
+                    'Una fusión perfecta de mango intenso y un toque cítrico del limón', 
+                    '20.00'
+                    )">
+                <img src="img/productos/postreMangoLimon.jpg" alt="Torta Limon y Mango">
+                <h3>Torta de Limón y Mango</h3>
+                <div class="descripcionProducto">Click para ver detalles</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ventana flotante cerrar -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-title">Detalles del Producto</h2>
+            <img id="modal-image" src="" alt="Producto" />
+            <p id="modal-description">Descripción del producto.</p>
+            <div id="modal-price"></div>
+        </div>
+    </div>
+
+    <!--=======================
+            FORMULARIO
+    =======================-->
+    <h1 class="contactosFormulario" id="formulario">CONTACTOS</h1>
+    <div class="formulario-contenedor">
+        <div class="imagen-lateral">
+            <img src="img/imagenLadoFormulario.jpg" alt="Imagen de contacto">
+        </div>
+
+        <div class="formulario">
+            <form action="">
+                <p>NOMBRES COMPLETOS</p>
+                <input type="text" class="ingreso">
+                <br />
+                <p>CORREO ELECTRÓNICO</p>
+                <input type="text" class="ingreso">
+                <br />
+                <p>NÚMERO CELULAR/TELÉFONO</p>
+                <input type="text" class="ingreso">
+                <br />
+                <p>MENSAJE</p>
+                <textarea class="ingreso"></textarea>
+                <br />
+                <p class="botonEnvio">
+                    <input type="submit" value="ENVIAR">
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <div class="datos">
+        <div class="datosTexto">
+            <h1 class="datosTextosH1">ENCUENTRANOS EN</h1>
+            <h3 class="datosTextosH3">Av. Santiago Antunez de Mayolo 1077, Los Olivos 15301</h3>
+        </div>
+        <div class="datosTexto">
+            <h1>NUESTRO NÚMEROS TELEFÓNICOS</h1>
+            <h3>+51 123 456 789 | +51 123 456 789</h3>
+        </div>
+        <div class="datosTexto">
+            <h1>NUESTRO CORREO ELECTRÓNICO</h1>
+            <h3>pasteleriaDulce@gmail.com</h3>
+        </div>
+    </div>
+
+    <!--=======================
+            TESTIMONIOS
+     =======================-->
+     <section class="testimonios" id="testimonios">
+        <h2>TESTIMONIOS DE NUESTRA CLIENTELA</h2>
+        <div class="grid-testimonios">
+            <div class="testimonio">
+                <h3>Juan Pérez</h3>
+                <p>"Excelente atención y las tortas son deliciosas. ¡100% recomendado!"</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>María García</h3>
+                <p>"El mejor lugar para pedir postres. ¡Excelente servicio!"</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+            <div class="testimonio">
+                <h3>Roberto Sánchez</h3>
+                <p>"Servicio rápido y productos de muy buena calidad. Volveré pronto."</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>Ana López</h3>
+                <p>"Un lugar perfecto para disfrutar con amigos y familia. ¡Volveré!"</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+            <div class="testimonio">
+                <h3>Carlos Manrriquez</h3>
+                <p>"Me encantó la variedad de postres, todos muy frescos y sabrosos."</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>Laura Pérez</h3>
+                <p>"La atención fue increíble y los postres, simplemente irresistibles."</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+            <div class="testimonio">
+                <h3>David Gómez</h3>
+                <p>"Excelente sabor y presentación en cada uno de los postres. ¡Muy recomendados!"</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>Elena Rodríguez</h3>
+                <p>"El ambiente es muy agradable y la calidad de los productos es excepcional."</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+            <div class="testimonio">
+                <h3>José Torres</h3>
+                <p>"Siempre encuentro lo que busco, postres deliciosos y servicio rápido."</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>Patricia Ruiz</h3>
+                <p>"Es un lugar maravilloso para disfrutar de un buen postre en cualquier momento."</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+            <div class="testimonio">
+                <h3>Ricardo Hernández</h3>
+                <p>"Todo estuvo excelente. Los postres, el servicio, la experiencia. ¡Totalmente recomendable!"</p>
+                <div class="valoracion">★★★★☆</div>
+            </div>
+            <div class="testimonio">
+                <h3>Martín Martinez</h3>
+                <p>"Excelente sabor y presentación en cada uno de los postres. ¡Muy recomendados!"</p>
+                <div class="valoracion">★★★★★</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--=======================
+           PIE DE PÁGINA
+    =======================-->
+    <footer class="pie-pagina">
+        <div class="grupo">
+            <div class="contendor">
+                <figure>
+                    <a href="#">
+                        <img src="img/logoWeb.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="contendor">
+                <h2>HORARIO DE ATENCIÓN</h2>
+                <p>Lunes a Sábado: 7:00 AM - 10:30 PM</p>
+                <p>Domingos y Feriados: 8:00 AM - 9:45 PM</p>
+                <div class="pagos">
+                    <img src="img/visa.png" alt="">
+                    <img src="img/MASTERCARD.png" alt="">
+                    <img src="img/yape.png" alt="">
+                </div>
+            </div>
+            <div class="contendor">
+                <h2>LIBRO DE RECLAMACIONES</h2>
+                <div class="libro">
+                    <img src="img/libro_reclamaciones.png" alt="">
+                </div>
+                <br>
+                <a href="contactos.html"><h4>Contactos</h4></a>
+            </div>
+        </div>
+    </footer>
     <script src="js/citas.js"></script>
     <script src="js/app.js"></script>
-    
+    <script src="js/detallesProducto.js"></script>
 </body>
 </html>
